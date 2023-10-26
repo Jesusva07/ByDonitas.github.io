@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.google.com/specimen/Nosifer" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-
 </head>
 <body>
     <header>
         <div class="confetti" id="confetti"></div>
-        <button class="comic-button" onclick="redirectToLogin()">Ingresar</button>
+        <button class="btn" onclick="redirectToLogin()">
+            <span class="back"></span>
+            <span class="front"></span>
+        </button>
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('home')">Inicio</a></li>
@@ -28,11 +27,13 @@
     </header>
 
     <section id="home" class="content home-section">
+ 
         <div class="logo">
             <img src="img/Logo.png" alt="Logo de ByDonitas">
         </div>
         <div class="home-content">
             <p>Donde los sueños se vuelven pqueñas donitas del sabor que prefieras</p>
+            
         </div>
 
         <div class="banerUno">
@@ -82,17 +83,20 @@
         </div>
 
     </section>
-    
-    
-
+    <button class="regalo" onclick="redirectToVideo()">Regalo para jefferson</button>
     <section id="about" class="content" style="display:none;">
         <h2>Sobre Nosotros</h2>
-        <p>Coloca aquí información sobre tu emprendimiento...</p>
-    </section>
+        <p>By Donitas es un emprendimiento dedicado a la creación y venta de mini donitas deliciosas y personalizadas. Fundado por Jefferson Torres, surgió como una iniciativa propia inspirada por una receta que descubrió en TikTok. Lo que comenzó como un pasatiempo familiar, pronto evolucionó hacia una apasionada empresa enfocada en llevar la dulzura y la innovación a cada bocado. By Donitas se enorgullece de ofrecer una amplia variedad de sabores y opciones de personalización para satisfacer los antojos de sus clientes. La empresa se enfocó en proporcionar calidad, frescura y Dulzura en cada pedido. Además, By Donitas está comprometido con la excelencia en cada etapa del proceso, desde la selección de los ingredientes hasta la presentación impecable de sus creaciones. La satisfacción de los clientes es una prioridad, y el equipo trabaja incansablemente para superar sus expectativas en cada experiencia con By Donitas.</p>
 
-    <footer>
-        <p>&copy; 2023 Mi Página de Inicio</p>
-    </footer>
+        <h2>Visión</h2>
+
+        <p>Para el 2026 ser reconocidos como líderes en la industria de las mini donitas, conocidos por nuestra innovación, calidad y pasión por el sabor. Buscamos expandir nuestro alcance y llegar a un público cada vez más amplio, llevando la alegría de las mini donitas personalizadas a todo el mundo. Además, aspiramos a mantener los más altos estándares de calidad y servicio, convirtiéndonos en el referente en satisfacción de antojos dulces.</p>
+
+        <h2>Misión</h2>
+
+        <p>Crear momentos dulces y memorables para nuestros clientes a través de mini donitas excepcionales. Nos comprometemos a ofrecer sabores irresistibles, personalización excepcional y un servicio al cliente de primera clase. Buscamos endulzar la vida de las personas y convertir cada bocado en una experiencia de felicidad.</p>
+
+    </section>
 
     <script src="script.js"></script>
 </body>
