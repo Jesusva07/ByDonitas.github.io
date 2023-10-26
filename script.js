@@ -33,19 +33,19 @@ function showSection(sectionId) {
     for (var i = 0; i < sections.length; i++) {
         sections[i].style.display = 'none';
     }
-
     var links = document.querySelectorAll('nav a');
     for (var i = 0; i < links.length; i++) {
         links[i].classList.remove('nav-selected');
     }
-
     document.getElementById(sectionId).style.display = 'block';
     document.querySelector('nav a[href="#'+sectionId+'"]').classList.add('nav-selected');
 }
-
-//Boton ingresar
 function redirectToLogin() {
-    window.location.href = "Login/login.html";
+    window.location.href = "login.html"
+}
+
+function redirectToVideo() {
+    window.location.href = "https://www.youtube.com/watch?v=nftMxlKUgFM&ab_channel=SinoUsumakiPupilaCarmes%C3%AD"
 }
 
 
