@@ -96,15 +96,9 @@ footer {
 }
 
 .logo img {
-    max-height: 250px; 
+    max-height: 300px; 
     vertical-align: middle;
     margin-right: 10px; 
-}
-.logo h1{
-    font-size: 100px;
-    color: #e094e7;
-    margin: 0;
-    font-family: "Gluten", sans-serif;
 }
 
 .confetti {
