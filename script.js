@@ -41,7 +41,7 @@ function showSection(sectionId) {
     document.querySelector('nav a[href="#'+sectionId+'"]').classList.add('nav-selected');
 }
 function redirectToLogin() {
-    window.location.href = "login.html"
+    window.location.href = "Login/login.html"
 }
 
 function redirectToVideo() {
