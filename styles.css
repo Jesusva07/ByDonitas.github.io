@@ -96,7 +96,7 @@ footer {
 }
 
 .logo img {
-    max-height: 250px; 
+    max-height: 300px; 
     vertical-align: middle;
     margin-right: 10px; 
 }
@@ -241,32 +241,56 @@ h2{
     place-items: center;
 }
 
-.comic-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #57dada;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 5px 5px 0px #000;
-    transition: all 0.3s ease;
+.btn {
+    --primary: 255, 90, 120;
+    --secondary: 150, 50, 60;
+    width: 60px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    outline: 10px solid rgb(var(--primary), .5);
+    border-radius: 100%;
+    position: relative;
+    transition: .3s;
   }
   
-  .comic-button:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border: 2px solid #cd9de9;
-    box-shadow: 5px 5px 0px #cc8ee9;
+  .btn .back {
+    background: rgb(var(--secondary));
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
   
-  .comic-button:active {
-    background-color: #fcf77d;
-    box-shadow: none;
-    transform: translateY(4px);
+  .btn .front {
+    background: linear-gradient(0deg, rgba(var(--primary), .6) 20%, rgba(var(--primary)) 50%);
+    box-shadow: 0 .5em 1em -0.2em rgba(var(--secondary), .5);
+    border-radius: 100%;
+    position: absolute;
+    border: 1px solid rgb(var(--secondary));
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: inherit;
+    transform: translateY(-15%);
+    transition: .15s;
+    color: rgb(var(--secondary));
+  }
+  
+  .btn:active .front {
+    transform: translateY(0%);
+    box-shadow: 0 0;
   }
   
   .container {
@@ -278,7 +302,6 @@ h2{
   .option-card {
     flex-basis: 45%;
   }
-
   .card-container {
   display: flex;
   justify-content: space-between;
@@ -286,7 +309,6 @@ h2{
   width: 100%;
   margin: 0 auto;
 }
-
 .card {
   width: 40%;
   height: 200px;
@@ -295,11 +317,9 @@ h2{
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-
 .card:hover {
   transform: scale(1.05);
 }
-
 .card .bg {
   position: absolute;
   top: 0;
@@ -310,7 +330,6 @@ h2{
   border-radius: 10px;
   z-index: 0;
 }
-
 .card .blob {
   position: absolute;
   top: 50%;
@@ -322,21 +341,36 @@ h2{
   border-radius: 50%;
   z-index: 1;
 }
-
 .card h3 {
   text-align: center;
   color: #fff;
   font-size: 20px;
   margin-top: 50px;
 }
-
 .card:active {
   transform: scale(1.1);
 }
-
 .card.selected {
   background-color: #000;
   border: 2px solid #fff;
+}
+.regalo {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57dada;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.regalo:hover {
+    background-color: #4ca7a7;
 }
 
 
