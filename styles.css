@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Gluten:wght@900&display=swap');
+body {
+    font-family: "Concert One", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e074b3;
+    color: #333;
+}
+
+header {
+        background-color: #ffffff;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-bottom: 2px solid #7a1818;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-image: radial-gradient(circle, transparent 30%, #b67546 70%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #803e12;
+    font-size: 18px;
+}
+.nav-selected::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e94e77;
+}
+
+.content {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.home-section {
+    text-align: center;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    color: #6c5ce7; 
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #555;
+}
+
+footer {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: grid;
+    place-items: center;
+}
+
+.logo img {
+    max-height: 250px; 
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+.logo h1{
+    font-size: 100px;
+    color: #e094e7;
+    margin: 0;
+    font-family: "Gluten", sans-serif;
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(0);
+    animation: fall 2s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.product-card {
+    max-width: 300px;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, opacity 0.5s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.product-card p {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: #d07ed8;
+    font-weight: bold;
+}
+
+.product-card .buy-button {
+    background-color: #9c4d2d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card .buy-button:hover {
+    background-color: #aa7137;
+}
+
+.banerUno {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banerUno img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banerDos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banerDos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banerDos h1{
+    padding-top: 20px;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+}
+
+.cart-icon a {
+    text-decoration: none;
+    color: #803e12;
+}
+
+.cart-icon i {
+    cursor: pointer;
+}
+
+h2{
+    display: grid;
+    place-items: center;
+}
+
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #57dada;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+  }
+  
+  .comic-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #cd9de9;
+    box-shadow: 5px 5px 0px #cc8ee9;
+  }
+  
+  .comic-button:active {
+    background-color: #fcf77d;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+
+  .option-card {
+    flex-basis: 45%;
+  }
+
+  .card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 40%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.card .blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.card h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.card:active {
+  transform: scale(1.1);
+}
+
+.card.selected {
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
+
+

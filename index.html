@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByDonitas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.google.com/specimen/Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="confetti" id="confetti"></div>
+        <button class="comic-button" onclick="redirectToLogin()">Ingresar</button>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Inicio</a></li>
+                <li><a href="#" onclick="showSection('order')">Pide en Línea</a></li>
+                <li><a href="#" onclick="showSection('about')">Sobre Nosotros</a></li>
+            </ul>   
+        </nav>
+        <div class="underline"></div>
+
+    </header>
+
+    <section id="home" class="content home-section">
+        <div class="logo">
+            <img src="img/Logo.png" alt="Logo de ByDonitas">
+            <h1>By Donitas</h1>
+        </div>
+        <div class="home-content">
+            <p>Donde los sueños se vuelven pqueñas donitas del sabor que prefieras</p>
+        </div>
+
+        <div class="banerUno">
+            <img src="img/Baner 1.png">
+        </div>
+
+        <div class="banerDos">
+            <h1>Este Halloween</h1>
+            <div class="banerDos">
+                <a href="#order">
+                    <img src="img/Baner 2.png">
+                </a>
+            </div>
+        </div>
+        <div class="card-container">
+        </div>
+        
+    </section>
+
+    <section id="order" class="content" style="display:none;">
+        <h2>Pide en Línea</h2>
+
+        <div class="product-container">
+            <div class="product-card">
+                <img src="img/Vaso de donas.jpg" alt="Donita de Chocolate">
+                <h3>Vaso espeluznante</h3>
+                <p>Una deliciosa donita cubierta de chocolate.</p>
+                <p class="price">$25.0000</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="img/Caja de donas.jpg" alt="Donita de Fresa">
+                <h3>Caja tenebrosa de minidonitas</h3>
+                <p>Una donita rellena de mermelada de fresa.</p>
+                <p class="price">$18.000-$35.000</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        
+            <div class="product-card">
+                <img src="img/Brocheta.jpg" alt="Donita Glaseada">
+                <h3>Brocheta de minidonitas</h3>
+                <p>La clásica donita con un toque de glaseado.</p>
+                <p class="price">$5.000-8.000</p>
+                <button class="buy-button">Comprar</button>
+            </div>
+        </div>
+
+    </section>
+    
+    
+
+    <section id="about" class="content" style="display:none;">
+        <h2>Sobre Nosotros</h2>
+        <p>Coloca aquí información sobre tu emprendimiento...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Página de Inicio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
