@@ -44,8 +44,6 @@ function redirectToLogin() {
     window.location.href = "Login/login.html"
 }
 
-function redirectToVideo() {
-    window.location.href = "https://www.youtube.com/watch?v=nftMxlKUgFM&ab_channel=SinoUsumakiPupilaCarmes%C3%AD"
-}
+
 
 
